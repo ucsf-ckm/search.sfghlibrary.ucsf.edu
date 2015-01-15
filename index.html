@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SFGH Library Search</title>
+  <link rel="stylesheet" href="css/foundation.min.css" />
+  <script src="bundle.js"></script>
+</head>
+
+<body>
+
+  <div class="contain-to-grid">
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="./">SFGH Library</a></h1>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <form action="index.html">
+        <div class="row">
+          <div class="large-12 columns">
+            <h2>Search</h2>
+            <div class="row collapse">
+              <div class="small-10 columns">
+                <input name="q" class="amalgamatic-search" type="search" title="Search terms" placeholder="Find Stuff" autofocus />
+              </div>
+              <div class="small-2 columns">
+                <input class="button postfix" type="submit" value="Search" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div data-alert id="didyoumean" class="row hide"></div>
+
+      <div class="row results-row">
+        <div class="large-4 columns">
+          <div class="panel radius">
+            <h3>PubMed@SFGH</h3>
+            <div class="results-list" id="pubmed">
+            </div>              
+          </div>
+        </div>
+        
+        <div class="large-4 columns">
+          <div class="panel radius">
+            <h3>UCSF Library Catalog</h3>
+            <div class="results-list" id="millennium">
+              <i>Coming soon.</i>
+            </div>
+          </div>
+        </div>
+
+        <div class="large-4 columns">
+          <div class="panel radius">
+            <h3>CINAHL</h3>
+            <div class="results-list" id="cinahl">
+              <i>Coming soon.</i>
+            </div>              
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

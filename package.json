@@ -1,10 +1,12 @@
 {
   "name": "search.sfghlibrary.ucsf.edu",
   "version": "1.0.0",
-  "description": "",
+  "description": "Search prototype for SFGH Library",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify main.js > bundle.js",
+    "watch": "watchify main.js -o bundle.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/ucsf-ckm/search.sfghlibrary.ucsf.edu/issues"
   },
-  "homepage": "https://github.com/ucsf-ckm/search.sfghlibrary.ucsf.edu"
+  "homepage": "https://github.com/ucsf-ckm/search.sfghlibrary.ucsf.edu",
+  "dependencies": {
+    "amalgamatic": "^6.0.2",
+    "amalgamatic-pubmed": "^3.2.2"
+  },
+  "devDependencies": {
+    "browserify": "^8.1.0"
+  }
 }
