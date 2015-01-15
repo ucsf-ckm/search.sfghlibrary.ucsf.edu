@@ -1,0 +1,19 @@
+{
+  "name": "search.sfghlibrary.ucsf.edu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ucsf-ckm/search.sfghlibrary.ucsf.edu.git"
+  },
+  "author": "Rich Trott <rtrott@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ucsf-ckm/search.sfghlibrary.ucsf.edu/issues"
+  },
+  "homepage": "https://github.com/ucsf-ckm/search.sfghlibrary.ucsf.edu"
+}
