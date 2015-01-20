@@ -3,10 +3,15 @@ var amalgamatic = require('amalgamatic');
 var pubmed = require('amalgamatic-pubmed');
 pubmed.setOptions({tool: '', otool: '', holding: 'causalib'});
 
+var millennium = require('amalgamatic-millennium');
+millennium.setOptions({url: 'http://cors-anywhere.herokuapp.com/ucsfcat.library.ucsf.edu/search/X'})
+
 amalgamatic.add('pubmed', pubmed);
+amalgamatic.add('millennium', millennium);
 
-var realDomain = {};
-
+var realDomain = {
+    millennium: 'http://ucsfcat.library.ucsf.edu/'
+};
 var search = function (searchTerm, res) {
     var callback = null;
 
@@ -100,7 +105,7 @@ if (searchTerms) {
 
         search(searchTerms);
 
-        var resultIds = ['pubmed'];
+        var resultIds = ['pubmed', 'millennium'];
         var resultElem;
         for (i=0, l=resultIds.length; i<l; i++) {
             resultElem = document.getElementById(resultIds[i]);
